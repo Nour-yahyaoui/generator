@@ -1,0 +1,164 @@
+/* form.css - Modern, Lightweight CSS for Password Generator */
+
+/* Base Styles */
+.password-form {
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.password-form h1 {
+  color: #3b82f6;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.password-form h3 {
+  color: #888;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+}
+
+/* Form Elements */
+.password-form label {
+  display: inline-block;
+  color: rgb(207, 207, 207);
+  margin: 0.5rem 0;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.password-form input[type='checkbox'] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #94a3b8;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.password-form input[type='checkbox']:checked {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  position: relative;
+}
+
+.password-form input[type='checkbox']:checked::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.password-form input[type='number'] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.password-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.password-form button:disabled {
+  background-color: #334155;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.password-form button:not(:disabled) {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.password-form button:not(:disabled):hover {
+  background-color: #2563eb;
+}
+
+/* Password Display */
+.password-result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+
+.password-result h4 {
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.password-result p {
+  color: #94a3b8;
+  font-family: 'Roboto Mono', monospace;
+  word-break: break-all;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.password-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.copy-btn {
+  padding: 0.25rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: #e2e8f0;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.copy-btn.copied {
+  background: rgba(74, 222, 128, 0.2);
+  border-color: rgba(74, 222, 128, 0.5);
+  color: #4ade80;
+}
+
+.password-result p {
+  position: relative;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  color: #94a3b8;
+  font-family: 'Roboto Mono', monospace;
+  word-break: break-all;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
