@@ -86,7 +86,7 @@ function Form() {
         value={length}
         onChange={handleLengthChange}
         placeholder="min: 20..."
-        min="20"
+        min="00"
         max="60"
       />
       {!(charsChecked || numChecked || symChecked) ? (
